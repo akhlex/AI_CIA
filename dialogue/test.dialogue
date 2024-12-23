@@ -1,0 +1,26 @@
+~ start
+
+NPC: Hello stranger!
+NPC: It's nice to see you!
+NPC: What do you like to do in your free time?
+- bully classmates
+	NPC: That's not cool, man!
+	set karma = karma - 1
+	NPC: You need to apologize!
+	- Say sorry
+		NPC: Well, I know you're joking, so it's fine.
+	- What are you going to do about it?
+		NPC: Square up then, come on!
+- eat ice cream
+	NPC: Yeah, I enjoy eating ice cream too!
+	NPC: We're friends now!
+	set karma = karma + 1
+	=> END
+- study
+	NPC: That's a little boring, but it's still nice I guess. 
+	set karma = karma + 0
+	=> END
+- quit
+	=> END
+	
+=> END
